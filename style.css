@@ -1,0 +1,752 @@
+@font-face{
+    font-family: "dunk heavy";
+    src: url("Druk-Heavy.ttf");
+}
+@font-face{
+    font-family: "yank";
+    src: url("yank-webfont.ttf");
+}
+@font-face{
+    font-family: "copperplate";
+    src: url("copperplate-b-webfont.ttf");
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+}
+#main{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#page1{
+    position: relative;
+    height: 120vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    }
+#batli{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: rotate(20deg);
+    z-index: 999999999;
+    height: 100vh;
+}
+#nav{
+    position: relative;
+    z-index: 999999999;
+    background-color: antiquewhite;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+#nav::after{
+    content:"" ;
+    position: absolute;
+    bottom: 0%;
+    border: 2px solid black;
+    width: 100%;
+}
+#nav_i{
+  
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+#nav_i i{
+   font-size: 4vh;
+}
+#logo_div img{
+    background-position: center;
+    padding: 3vh;
+    height: 10vh;
+}
+button{
+    margin: 3vh 2vw;
+    height: 10vh;
+    background-color: brown;
+    padding: 2vh 3vh;
+    border: none;
+}
+button a{
+  color: aliceblue;
+font-size: 4vh;
+text-transform: capitalize;
+text-decoration: none;
+font-family: dunk heavy;
+}
+#p1_centertxt{
+    position: absolute;
+    top: 5%;
+    left: 14%;
+    height: 90%;
+    width: 74%;
+}
+#p1_centertxt h1{
+    font-family: druk;
+    letter-spacing: 1vh;
+    line-height:15.6rem;
+    font-size: 45vh;
+    text-transform:uppercase;
+    text-align: center;
+    -webkit-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #DA2E39;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+#p2_left{
+    margin-top: -13%;
+    padding: 5vh ovw;
+    margin-left: 2vw;
+    height: 75%;
+    width: 34%;
+    z-index: 999;
+}
+#p2_right{
+    margin-top: -15%;     
+    padding: 5vh 0vw;
+    margin-right: 2vw;
+    height: 75%;
+    width: 34%;
+    border: 3px double black;
+    z-index: 999;
+}
+#p2_right_box{
+    margin: 0vh 1vw;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+ hr{
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+.three_divtxt{
+    display: flex;
+    justify-content: space-between;
+}
+.three_divtxt p{
+    width: 15vw;
+    font-size: 2.5vh;
+    font-weight: 700;
+    text-align: left;
+    font: 300 18px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+}
+.three_divtxt h1{
+     font-size: 10vh;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-color: rgb(0, 0, 0);
+     background-image: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png");
+     background-size: cover;
+     background-position: center;
+}
+.p2_txt h2{
+    text-transform: uppercase;
+    line-height: 3vh;
+}
+.p2_txt h3{
+font-weight: 100;
+}
+#p2_left_box{
+    margin: 0vh 1vw;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+#p2_left_box h3{
+    padding-top: 3vh;
+    font: 400 26px/1 yank,cursive;
+}
+#p2_left_box h1{
+    font-size: 15vh;
+    width: 64%;
+    line-height: 11vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png");
+    background-size: cover;
+    background-position: center;
+ text-transform: uppercase;
+}
+#p2_left_box h2{
+    text-transform: capitalize;
+}
+#p2_left_box button{
+    width: 10vw;
+    background-color: black;
+}
+#p2_left_box p{
+    width: 25vw;
+    font: 300 18px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page3{
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+#page3 h1{
+    padding-top: 17vh;
+    font-size: 54vh;
+    width: 100%;
+    height: 26vh;
+    letter-spacing: 0vh;
+    line-height: 11vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(227, 41, 41);
+    background-image: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png");
+    background-size: cover;
+    background-position: center;
+ text-transform: uppercase;
+ font-family: dunk heavy;
+}
+#p3_center{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#p3_left{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    height: 75%;
+    width: 34%;
+   
+}
+#video{
+    height: 70%;
+    width: 90%;
+    align-items: center;
+    margin: 3vh 4vh;
+    background-position: center;
+    /* background-color: aliceblue; */
+    background-image: url("	https://img.youtube.com/vi/Fm8oy37AnEQ/hqdefault.jpg");
+}
+#p3_left h2{
+    padding-top: 1vh;
+    padding-left: 4vw;
+    font: 400 26px/1 yank,cursive;
+    width: 70%;
+}
+#p3_right{
+    margin-top: 5vh;
+    margin-right: 3vw;
+    height: 75%;
+    width: 34%;
+   
+}
+#p3_right h2{
+    font-family: "dunk heavy";
+    font-size: 5vh;
+    text-transform: uppercase;
+}
+#p3_right p{
+    margin-top: 4vh;
+    text-align: left;
+    font-size: 2vh;
+    font: 300 18px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page4{
+    height: 110vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+#page4 h1{
+    padding-top: 17vh;
+    font-size: 40vh;
+    width: 100%;
+    height: 26vh;
+    letter-spacing: 0vh;
+    line-height: 11vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(227, 41, 41);
+    background-image: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png");
+    background-size: cover;
+    background-position: center;
+   text-transform: uppercase;
+   font-family: dunk heavy;
+}
+#p4_center{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#p4_left{
+    margin-top: 1vh;
+    margin-left: 3vw;
+    height: 89%;
+    width: 34%;
+}
+#p4_right{
+    margin-top: 1vh;
+    margin-right: 3vw;
+    height: 89%;
+    width: 34%;
+}
+#p4_img1 
+{margin-top: 8vh;
+    margin-left: 5vh;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-20deg);
+}
+#p4_img2 
+{
+    margin-top: 8vh;
+    margin-left: 5vh;
+    margin-bottom: 0vh;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(-20deg);
+}
+#p4_img_div{
+    position: relative;
+     height: 70%;
+     width: 100%;
+     border-bottom: 2px solid black;
+}
+#p4_img_div::after{
+    content: "";
+    bottom: .5%;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+#p4_img_div h2{
+    position: absolute;
+    top: 20vh;
+    left: 10vh;
+    font-size: 4vh;
+    font-family:  yank,cursive;
+}
+#p4_dog{
+    position: absolute;
+    bottom:-14%;
+    height: 35vh;
+    right: 0%;
+    z-index: 9000;
+}
+#p4_txt_div{
+    height: 30%;
+    width: 100%;
+}
+#p4_txt_div h2{
+    font-size: 10vh;
+    text-transform: capitalize;
+    font-family: dunk heavy;
+}
+#p4_txt_div h3{
+    font-size: 2vh;
+    font-weight: 100;
+    font-family: monospace;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page5{
+    height: 150vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+#p5_left{
+    position: relative;
+    margin-top: 10vh;
+    height: 95%;
+    width: 45%;
+
+}
+#p5_right{
+    position: relative;
+    margin-top: 10vh;
+    height: 95%;
+    width: 40%;
+
+}
+.h2_tages{
+    font-family: "dunk heavy";
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    color: aliceblue;
+    transform: translate(-50%,-50%);
+}
+.p_tages{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 2vh;
+    font-family: monospace;
+    font-weight: 700;
+    color: aliceblue;
+}
+#p5_img1{
+    position: relative;
+    height: 60vh;
+    width: 55vh;
+}
+#p5_img1 img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+}
+#p5_img2{
+    z-index: 99999;
+    top: 30%;
+    right: -14%;
+    position: absolute;
+    height: 60vh;
+    width: 55vh;
+}
+#p5_img2 img{
+   
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+} 
+#p5_img3{
+    left: 10%;
+    position: absolute;
+    height: 80vh;
+    width: 50vh;
+    transform: rotate(-20deg);
+
+}
+
+#p5_img3 img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+}
+#p5_img4{
+    top: 18%;
+    left: 10%;
+    position: absolute;
+    height: 74vh;
+    width: 65vh;
+}
+
+#p5_img4 img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;    
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page6{
+    height: 120vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page6 h2{
+    font-size: 5vh;
+    font-family:  yank,cursive;
+    text-transform: capitalize;
+}
+#page6 h1{
+    font-size: 15vh;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+}
+#p6_img_div{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.p6_img{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+#page6_1{
+    height: 140vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#p6_2left{
+    margin-left: 4vh;
+    height: 70%;
+    width: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://lagunitas.com/wp-content/uploads/2021/07/Mod2_MAX_600x400_Oct2022final-01-1024x683.jpg");
+}
+#p6_2right{
+    height: 70%;
+    width: 30%;
+    margin-right: 2vh;
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+}
+#p6_2right h2{
+    font-size: 5vh;
+    font-family:  yank,cursive;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+#p6_2right h1{
+    font-family: "copperplate";
+    font-size: 8vh;
+    line-height: 6vh;
+
+}
+#p6_2right p{
+
+    text-align: left;
+    font-size: 1.2vh;
+    font: 300 16px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+}
+button{
+
+    background-color: black;
+    width: 30vh;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+#page7{
+    height: 140vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+#p7_left{
+    height: 100%;
+    width: 27%;
+}
+#p7_left h1{
+    font-family: "copperplate";
+    font-size: 10vh;
+    line-height: 8vh;
+}
+#p7_left a{
+    text-decoration: none;
+    color: black;
+    font-size: 4vh;
+    border-bottom:2px solid black;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+}
+#p7_right{
+    height: 100%;
+    width: 72%;
+    display: flex;
+    justify-content: space-between;
+}
+.p7_three_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p7_three_div img{
+     height: 60%;
+}
+.p7_three_div h1{
+    font-size: 6vh;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+    text-transform: capitalize;
+}
+.p7_three_div p{
+    width: 75%;
+    text-align: left;
+    font-size: 2vh;
+    font: 300 18px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+    /* font-family: monospace; */
+}
+.button_div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2vh;
+}
+#button a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+    border-bottom:2px solid black;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page7_2{
+    height: 45vh;
+    width: 100vw;
+    background-color: rgb(253, 247, 240);
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+#page8{
+    height: 100vh;
+     width: 100vw;
+     position: relative;
+     background-color: rgb(0, 0, 0);
+ }
+ #page8::after
+ {
+    z-index: 99999999;
+     content:'';
+     background-position: center;
+     background-size: cover;
+     height: 470px;
+     width: 100%;
+     bottom:100%;
+     left: 0%;
+     position: absolute;
+     /* background-color: aqua; */
+     background: url("https://lagunitas.com/wp-content/themes/lagunitas/assets/images/footer-t.png") no-repeat;
+ }
+ #p8_div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 2vh;
+}
+#p8_one{
+    position: relative;
+    height: 95%;
+    width: 20%;
+}
+#p8_one img{
+    position: absolute;
+     top: 20%;
+     left: 25%;
+     height: 20vh;
+     transform: rotate(-15deg);
+}
+#p8_two{
+    position: relative;
+    height: 95%;
+    width: 35%;
+    }
+#p8_two h1{
+    margin-top: 17vh;
+    font-size: 13vh;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+    line-height: 13vh;
+    color: aliceblue;
+}
+.atages{
+    position: absolute;
+    bottom: 3%;
+    padding: 5vh 1vh;
+}
+.atages a{
+    text-transform: capitalize;
+    font: 300 12px/1.31 abadi-mt-condensed,Arial,Helvetica,sans-serif;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+}
+
+#p8_three{ 
+    position: relative;
+    height: 95%;
+    width: 42%;
+
+} 
+#p8_three h2
+{   margin-top: 15vh;
+    font-weight: 400;
+    color: aliceblue;
+    margin-left: 3vh;
+    font-size: 5vh;
+    font-family:  yank,cursive;
+    text-transform: capitalize;
+}
+#search_div{
+    margin-left: 4vh;
+    height: 14vh;
+    width: 80%;
+    display: flex;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+#search_bar input[type="text"]{
+    margin-left: 4vh;
+    height: 10vh;
+    width: 20vw;
+    background-color: aliceblue;
+    border-radius: 25px splid;
+    font-size: 4vh;
+    text-align: center;
+    text-transform:uppercase;
+    font-family: dunk heavy;
+    color: rgb(0, 0, 0);
+}
+#button_div button{
+    width: 8vw;
+    background-color: black;
+}
+#p8_i{
+    position: absolute;
+    top: 45%;
+    margin-left: 8vh;
+    height: 8vh;
+    width: 45%;
+    display: flex;
+   justify-content: space-evenly;
+}
+#p8_i i{
+      font-size: 4.5vh;
+      color: aliceblue;
+}
